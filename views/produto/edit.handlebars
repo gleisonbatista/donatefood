@@ -1,0 +1,26 @@
+<h1>Editar Produto</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="/produto/update" method="post">
+            <input type="hidden" name="id" value="{{produto.dataValues.id}}">
+
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" value="{{produto.dataValues.descricao}}" class="form-control">
+
+            <label for="dataValidade">Data de Validade</label>
+            <input type="text" name="dataValidade" value="{{produto.dataValues.dataValidade}}" class="form-control">
+
+             <label for="localColeta">Local da Coleta</label>
+            <input type="text" name="localColeta" value="{{produto.dataValues.localColeta}}" class="form-control">
+
+            <label for="statusProduto">Status</label>
+            <select name="statusProduto" class="custom-select">
+                <option value="{{produto.dataValues.statusProduto}}" selected>{{produto.dataValues.statusProduto}}</option>
+                <option value="diposnivel">Disponivel</option>
+                <option value="entregue">Entregue</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary mt-4">Atualizar</button>
+        </form>
+    </div>
+</div>

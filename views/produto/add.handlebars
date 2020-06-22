@@ -1,0 +1,19 @@
+<h1>Novo Produto</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="/produto/insert" method="post">
+            <label for="descricao">Descrição</label>
+            <input type="text" name="descricao" placeholder="Digite a descrição do Produto" class="form-control">
+
+            <label for="dataValidade">Data de Validade</label>
+            <input type="date" name="dataValidade" placeholder="Digite a data de Vencimento" class="form-control">
+
+             <label for="localColeta">Local da Coleta</label>
+            <input type="text" name="localColeta" placeholder="Digite o Local de Coleta" class="form-control">
+
+            <input type="hidden" name="statusProduto" value="disponivel">
+
+            <button type="submit" class="btn btn-primary mt-4">Cadastrar</button>
+        </form>
+    </div>
+</div>
